@@ -1,0 +1,29 @@
+2018-08-25 14:47:33.1227 INFO Entering HomeController.Index()
+2018-08-25 14:47:42.4428 INFO Entering LoginController.OnLogin()
+2018-08-25 14:47:42.4522 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-25 14:47:42.4688 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":"03D7AE02189C0B14597258BDAE4CCA02","SearchCriteria":null}
+2018-08-25 14:47:53.4662 INFO Entering LoginController.OnLogin()
+2018-08-25 14:47:53.4721 INFO Parameters are: {"Username":"laksjdfhalksjdfh","Password":"alksjdfhalksjdfh","RandomSalt":null,"SearchCriteria":null}
+2018-08-25 14:47:53.4721 INFO Parameters are: {"Username":"laksjdfhalksjdfh","Password":"alksjdfhalksjdfh","RandomSalt":"39F12D7CBDE55694A2A1006DDA4D0509","SearchCriteria":null}
+2018-08-25 14:47:54.0884 ERROR Exception LoginController.OnLogin() Object reference not set to an instance of an object.
+2018-08-25 14:47:54.0884 INFO Object reference not set to an instance of an object.
+2018-08-25 14:55:31.0058 INFO Entering HomeController.Index()
+2018-08-25 14:55:38.5645 INFO Entering LoginController.OnLogin()
+2018-08-25 14:55:38.5645 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-25 14:55:38.5878 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":"91DFB58510C312CAAF68AFDCE50EA70B","SearchCriteria":null}
+2018-08-25 14:55:48.5753 INFO Entering LoginController.OnLogin()
+2018-08-25 14:55:48.6036 INFO Parameters are: {"Username":"lakjsdhflakjsdhf","Password":"a;asldkfjkjlsdaf;","RandomSalt":null,"SearchCriteria":null}
+2018-08-25 14:55:48.6134 INFO Parameters are: {"Username":"lakjsdhflakjsdhf","Password":"a;asldkfjkjlsdaf;","RandomSalt":"6DED06DDBEE40F238596DC098C2734AD","SearchCriteria":null}
+2018-08-25 14:55:55.1406 INFO Entering LoginController.OnLogin()
+2018-08-25 14:55:55.1406 INFO Parameters are: {"Username":"lakjsdhflakjsdhf","Password":"lakjshdfalksjdfh","RandomSalt":null,"SearchCriteria":null}
+2018-08-25 14:55:55.1743 INFO Parameters are: {"Username":"lakjsdhflakjsdhf","Password":"lakjshdfalksjdfh","RandomSalt":"122A307B8531EE2816031A8150D2F8D4","SearchCriteria":null}
+2018-08-25 14:55:55.1743 INFO Inside SecurityService
+2018-08-25 14:55:55.1743 INFO Inside securityDAO
+2018-08-25 14:55:55.8276 INFO This is the hashed password: sha1:64000:18:kTrUy3tXkbx9plrThHcAroSGzQNZsT3d:T8VTCRS1wx2MnliYjFYtaokL
+2018-08-25 14:55:55.8276 INFO This is salt in the data layer
+after passing through client layer: 122A307B8531EE2816031A8150D2F8D4
+2018-08-25 14:55:56.1730 INFO Duplicate check success
+2018-08-25 14:55:56.1914 INFO Insert Success
+2018-08-25 14:55:56.2072 INFO Exiting LoginController.OnLogin() with login success
+2018-08-25 20:33:03.1807 INFO Entering HomeController.Index()
+2018-08-25 20:37:10.3552 INFO Entering HomeController.Index()

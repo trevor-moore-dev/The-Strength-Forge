@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="tsfdbconn-Web.config Connection String" description="tsfdbconn Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:playminesweeperserver.database.windows.net,1433;Initial Catalog=PlayMinesweeper_DB;Persist Security Info=False;User ID=trevormoore;Password=Meghan98!;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Trevor\\Documents\\Summer2018Project\\StrengthForge\\StrengthForge\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='tsfdbconn']/@connectionString" />
+  </parameter>
+</parameters>

@@ -1,0 +1,190 @@
+﻿@model TheStrengthForge.Models.LoginModel
+<!------ Include the above in your HEAD tag ---------->
+
+<script language="text/javascript">
+	function sha1(msg)
+	{
+	  function rotl(n,s) { return n<<s|n>
+		>>32-s; };
+		function tohex(i) { for(var h="", s=28;;s-=4) { h+=(i>>>s&0xf).toString(16); if(!s) return h; } };
+		var H0=0x67452301, H1=0xEFCDAB89, H2=0x98BADCFE, H3=0x10325476, H4=0xC3D2E1F0, M=0x0ffffffff;
+		var i, t, W=new Array(80), ml=msg.length, wa=new Array();
+		msg += String.fromCharCode(0x80);
+		while(msg.length%4) msg+=String.fromCharCode(0);
+		for(i=0;i<msg.length;i+ =4) wa.push(msg.charCodeAt(i)<<24|msg.charCodeAt(i+1)<<16|msg.charCodeAt(i+2)<<8|msg.charCodeAt(i+3));
+	  while(wa.length%16!=14) wa.push(0);
+	  wa.push(ml>>>29),wa.push((ml<<3)&M);
+	  for( var bo=0;bo<wa.length;bo+=16 ) {
+		for(i=0;i<16;i++) W[i]=wa[bo+i];
+		for(i=16;i<=79;i++) W[i]=rotl(W[i-3]^W[i-8]^W[i-14]^W[i-16],1);
+		var A=H0, B=H1, C=H2, D=H3, E=H4;
+		for(i=0 ;i<=19;i++) t=(rotl(A,5)+(B&C|~B&D)+E+W[i]+0x5A827999)&M, E=D, D=C, C=rotl(B,30), B=A, A=t;
+		for(i=20;i<=39;i++) t=(rotl(A,5)+(B^C^D)+E+W[i]+0x6ED9EBA1)&M, E=D, D=C, C=rotl(B,30), B=A, A=t;
+		for(i=40;i<=59;i++) t=(rotl(A,5)+(B&C|B&D|C&D)+E+W[i]+0x8F1BBCDC)&M, E=D, D=C, C=rotl(B,30), B=A, A=t;
+		for(i=60;i<=79;i++) t=(rotl(A,5)+(B^C^D)+E+W[i]+0xCA62C1D6)&M, E=D, D=C, C=rotl(B,30), B=A, A=t;
+		H0=H0+A&M;H1=H1+B&M;H2=H2+C&M;H3=H3+D&M;H4=H4+E&M;
+	  }
+	  return tohex(H0)+tohex(H1)+tohex(H2)+tohex(H3)+tohex(H4);
+	}
+</script>
+
+<script language="text/javascript">
+	function auth(seed)
+	{
+		var password1 = $('#Password');
+		var password = password1.val();
+		var hash = sha1(seed + sha1(password).toUpperCase());
+		password1.val(hash.toUpperCase());
+		return true;
+	}
+</script>
+
+<script language="text/javascript">
+	$(document).ready(function () {
+		$('#btnLogin').click(function () {
+			if ($('#Password').val() != "") {
+				var seed = $('#RandomSalt');
+				return auth(seed.val());
+			}
+			$('#frm').submit();
+		});
+	});
+
+	$(function () {
+		var controls = $(".disable");
+		controls.bind("paste", function () {
+			return false;
+		});
+		controls.bind("drop", function () {
+			return false;
+		});
+		controls.bind("cut", function () {
+			return false;
+		});
+		controls.bind("copy", function () {
+			return false;
+		});
+	})
+</script>
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<body>
+	<nav class="navbar navbar-default navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">The Strength Forge</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+					<li><a href="~/Home">Home</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Workout Programs <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="~/Program/OnPowerlifting1">Powerlifting</a></li>
+							<li><a href="#">Bodybuilding</a></li>
+							<li><a href="#">Crossfit</a></li>
+							<li><a href="#">Weightloss</a></li>
+							<li><a href="#">Athletic</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Diets <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="#">Muscle Mass</a></li>
+							<li><a href="#">Cut Fat</a></li>
+							<li><a href="#">Maintenance</a></li>
+							<li><a href="#">Strength</a></li>
+							<li><a href="#">Longevity</a></li>
+						</ul>
+					</li>
+
+				</ul>
+
+				<!--Search form-->
+
+				<div id="search">
+					@Html.Partial("Search")
+				</div>
+
+
+
+				<!--Login form-->
+				<ul class="nav navbar-nav navbar-right">
+					<li><p class="navbar-text">Already have an account?</p></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+						<ul id="login-dp" class="dropdown-menu">
+							<li>
+								<div class="row">
+									<div class="col-md-12">
+
+										<!--
+	<div class="social-buttons">
+		<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+		<a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+	</div>
+	or
+		-->
+										<!-- CHange!!! -->
+										@using (Html.BeginForm("OnLogin", "Login", FormMethod.Post, new { id = "frm" }))
+										{
+										@Html.AntiForgeryToken()
+
+										<div>
+
+											<h4 style="color: #000000">Login</h4>
+											<hr />
+											@Html.ValidationSummary(true, "", new { @class = "text-danger" })
+											<div class="form-group">
+												<div class="col-md-12">
+													@Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control", placeholder = "Username or Email" } })
+													@Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger", @style = "color:red" })
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="col-md-12">
+													@Html.PasswordFor(model => model.Password, new { @class = "form-control", placeholder = "Password" })
+													@Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger", @style = "color:red" })
+												</div>
+											</div>
+
+											<div class="form-group">
+												<div class="col-md col-md-12">
+													<input type="submit" id="btnLogin" value="Login" class="btn btn-primary btn-block" />
+												</div>
+											</div>
+
+										</div>
+										@Html.HiddenFor(model => model.RandomSalt)
+										}
+										</div>
+
+
+
+									<div class="bottom text-center" style="color: #000000">
+										Don't have an account?
+										<br/>
+										<a href="~/SignUp"><b style="color: #0951a0">Sign Up Here</b></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+</body>

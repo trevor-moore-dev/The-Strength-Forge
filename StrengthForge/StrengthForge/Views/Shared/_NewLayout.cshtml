@@ -1,0 +1,112 @@
+﻿@*
+	Trevor Moore
+	5/2/2018
+*@
+
+<!DOCTYPE html>
+
+<style>
+
+	h4, .control-label {
+		color: #fff
+	}
+
+	.form-horizontal {
+		min-height: 70%;
+		width: 70%;
+		padding: 19px;
+		position: absolute;
+		
+		background: rgba(0, 0, 0, 0.6);
+		margin-bottom: 80px;
+		padding-bottom: 20px;
+		border: 1px solid #464646;
+		border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	}
+
+	*{
+		color: #fff;
+	
+	}
+
+	body {
+		background: url('//fitnesspatterns.com/wp-content/uploads/2017/01/cropped-Gym-background-HD.jpg');
+		padding: 50px;
+		height: 100%;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	#login-dp{
+		min-width: 250px;
+		padding: 14px 14px 0;
+		overflow:hidden;
+		background-color:rgba(255,255,255,.8);
+	}
+	#login-dp .help-block{
+		font-size:12px
+	}
+	#login-dp .bottom{
+		background-color:rgba(255,255,255,.8);
+		border-top:1px solid #ddd;
+		clear:both;
+		padding:14px;
+	}
+	#login-dp .social-buttons{
+		margin:12px 0
+	}
+	#login-dp .social-buttons a{
+		width: 49%;
+	}
+	#login-dp .form-group {
+		margin-bottom: 10px;
+	}
+	.btn-fb{
+		color: #fff;
+		background-color:#3b5998;
+	}
+	.btn-fb:hover{
+		color: #fff;
+		background-color:#496ebc
+	}
+	.btn-tw{
+		color: #fff;
+		background-color:#55acee;
+	}
+	.btn-tw:hover{
+		color: #fff;
+		background-color:#59b5fa;
+	}
+
+</style>
+
+<html>
+<head>
+	<title>@ViewBag.Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+	<link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap-css" />
+
+
+	<script src="~/Scripts/jquery-1.11.1.min.js"></script>
+	<script src="~/Scripts/bootstrap.min.js"></script>
+
+	<script src="~/Scripts/mdb.js"></script>
+	@RenderSection("head", required: false)
+	<script type="text/javascript" src="@Url.Content("/Scripts/jquery-1.10.2.js")"></script>
+	<script type="text/javascript" src="@Url.Content("/Scripts/jquery.unobtrusive-ajax.js")"></script>
+</head>
+
+<body>
+	@RenderPage("_Header2.cshtml")
+	<div class="container body-content" style="padding-bottom: 80px">
+		@RenderBody()
+	</div>
+	<div class="footer" style="padding-top: 100px">
+		@RenderPage("_Footer.cshtml")
+	</div>
+</body>
+</html>

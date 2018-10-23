@@ -1,0 +1,98 @@
+﻿@*
+	Trevor Moore
+	5/2/2018
+*@
+
+@{
+	ViewBag.Title = "The Strength Forge";
+	Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+
+
+<!DOCTYPE html>
+
+
+<div class="form-horizontal">
+
+	<br />
+	<br />
+
+	<h3>Welcome to The Strength Forge!</h3>
+
+	<hr />
+
+	<div>
+		Your #1 source for gaining both physical and mental strength!
+	</div>
+
+	<br />
+	<br />
+	<br />
+	<br />
+
+	<h4>Workout of the Day:</h4>
+	<hr />
+
+	<!--Table-->
+	<table class="table">
+
+		<!--Table head-->
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Exercise</th>
+				<th>Set 1</th>
+				<th>Set 2</th>
+				<th>Set 3</th>
+				<th>Set 4</th>
+				<th>Set 5</th>
+			</tr>
+		</thead>
+		<!--Table head-->
+		<!--Table body-->
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Conventional Deadlift</td>
+				<td>225 / 10 reps</td>
+				<td>275 / 8 reps</td>
+				<td>315 / 6 reps</td>
+				<td>365 / 4 reps</td>
+				<td>405 / 2 reps</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Barbell Squats</td>
+				<td>200 / 10 reps</td>
+				<td>225 / 8 reps</td>
+				<td>275 / 6 reps</td>
+				<td>315 / 4 reps</td>
+				<td>365 / 2 reps</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Bench Press</td>
+				<td>135 / 10 reps</td>
+				<td>185 / 8 reps</td>
+				<td>225 / 6 reps</td>
+				<td>275 / 4 reps</td>
+				<td>315 / 2 reps</td>
+			</tr>
+		</tbody>
+		<!--Table body-->
+
+	</table>
+	<!--Table-->
+
+	<center>
+		<button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
+	</center>
+
+</div>
+
+<script>
+	function myFunction() {
+		window.print();
+	}
+</script>

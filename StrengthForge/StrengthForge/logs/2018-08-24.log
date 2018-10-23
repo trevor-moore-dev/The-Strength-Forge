@@ -1,0 +1,125 @@
+2018-08-24 02:02:32.6292 INFO Entering HomeController.Index()
+2018-08-24 02:02:53.1219 INFO Entering HomeController.Index()
+2018-08-24 02:06:24.1742 INFO Entering HomeController.Index()
+2018-08-24 02:08:55.0976 INFO Entering HomeController.Index()
+2018-08-24 02:17:33.9069 INFO Entering HomeController.Index()
+2018-08-24 02:22:19.7751 INFO Entering HomeController.Index()
+2018-08-24 02:23:14.8399 INFO Entering HomeController.Index()
+2018-08-24 02:23:43.9881 INFO Entering HomeController.Index()
+2018-08-24 02:24:05.2123 INFO Entering LoginController.OnLogin()
+2018-08-24 02:24:05.2283 INFO Parameters are: {"Username":"Testing123123","Password":"Ihopethisworks!","RandomSalt":null}
+2018-08-24 02:26:26.0754 INFO Entering LoginController.OnLogin()
+2018-08-24 02:26:26.0754 INFO Parameters are: {"Username":"Testing123123","Password":null,"RandomSalt":null}
+2018-08-24 02:27:33.6928 INFO Entering LoginController.OnLogin()
+2018-08-24 02:27:33.6928 INFO Parameters are: {"Username":"Testing123123","Password":null,"RandomSalt":null}
+2018-08-24 02:28:11.9551 INFO Entering LoginController.OnLogin()
+2018-08-24 02:28:11.9551 INFO Parameters are: {"Username":"Testing123123","Password":"asdafaskdjvnasldvc","RandomSalt":null}
+2018-08-24 02:28:14.1392 INFO Exiting LoginController.OnLogin() with login success
+2018-08-24 02:28:28.3252 INFO Entering LoginController.OnLogin()
+2018-08-24 02:28:28.3252 INFO Parameters are: {"Username":"asd","Password":null,"RandomSalt":null}
+2018-08-24 02:28:49.9194 INFO Entering HomeController.Index()
+2018-08-24 02:29:00.4504 INFO Entering LoginController.OnLogin()
+2018-08-24 02:29:00.4504 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 02:36:00.2998 INFO Entering HomeController.Index()
+2018-08-24 02:36:14.7645 INFO Entering LoginController.OnLogin()
+2018-08-24 02:36:14.7794 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 02:36:27.8127 INFO Entering HomeController.Index()
+2018-08-24 02:36:42.1535 INFO Entering LoginController.OnLogin()
+2018-08-24 02:36:42.1535 INFO Parameters are: {"Username":"asdfasfdsadf","Password":"asdfasdfasdfasdf","RandomSalt":null}
+2018-08-24 02:36:42.6152 INFO Exiting LoginController.OnLogin() with login success
+2018-08-24 02:38:57.3894 INFO Entering HomeController.Index()
+2018-08-24 02:39:01.6077 INFO Entering LoginController.OnLogin()
+2018-08-24 02:39:01.6077 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 02:39:12.5535 INFO Entering HomeController.Index()
+2018-08-24 02:39:16.4172 INFO Entering LoginController.OnLogin()
+2018-08-24 02:39:16.4172 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 02:39:22.1758 INFO Entering LoginController.OnLogin()
+2018-08-24 02:39:22.1758 INFO Parameters are: {"Username":"ASDASDAsf","Password":null,"RandomSalt":null}
+2018-08-24 02:39:29.8323 INFO Entering HomeController.Index()
+2018-08-24 02:39:40.6729 INFO Entering LoginController.OnLogin()
+2018-08-24 02:39:40.6729 INFO Parameters are: {"Username":"zxcv","Password":null,"RandomSalt":null}
+2018-08-24 02:44:38.4545 INFO Entering HomeController.Index()
+2018-08-24 19:23:40.7484 INFO Entering HomeController.Index()
+2018-08-24 19:23:57.2782 INFO Entering HomeController.Index()
+2018-08-24 19:24:07.8323 INFO Entering LoginController.OnLogin()
+2018-08-24 19:24:07.8482 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 19:34:40.5753 INFO Entering HomeController.Index()
+2018-08-24 19:35:13.5347 INFO Entering LoginController.OnLogin()
+2018-08-24 19:35:13.6045 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 20:16:19.4402 INFO Entering HomeController.Index()
+2018-08-24 20:16:42.5553 INFO Entering LoginController.OnLogin()
+2018-08-24 20:16:42.5673 INFO Parameters are: {"Username":"Superdooper","Password":"SuperSecret","RandomSalt":null}
+2018-08-24 20:16:43.6773 ERROR Exception LoginController.OnLogin()
+2018-08-24 20:22:56.5678 INFO Entering HomeController.Index()
+2018-08-24 20:23:04.8714 INFO Entering LoginController.OnLogin()
+2018-08-24 20:23:04.8714 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 20:24:14.6865 INFO Entering LoginController.OnLogin()
+2018-08-24 20:24:14.6865 INFO Parameters are: {"Username":"Superdooper","Password":"SuperSecrets","RandomSalt":null}
+2018-08-24 20:24:15.7925 ERROR Exception LoginController.OnLogin()
+2018-08-24 20:28:59.0793 INFO Entering HomeController.Index()
+2018-08-24 20:29:23.0461 INFO Entering LoginController.OnLogin()
+2018-08-24 20:29:23.0581 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 20:29:32.4131 INFO Entering LoginController.OnLogin()
+2018-08-24 20:29:32.4221 INFO Parameters are: {"Username":"Superdooper","Password":"Supersecrets","RandomSalt":null}
+2018-08-24 20:29:33.5450 ERROR Exception LoginController.OnLogin()
+2018-08-24 20:34:12.0050 INFO Entering HomeController.Index()
+2018-08-24 20:36:15.7421 INFO Entering HomeController.Index()
+2018-08-24 20:41:40.9870 INFO Entering HomeController.Index()
+2018-08-24 20:42:47.1540 INFO Entering HomeController.Index()
+2018-08-24 20:42:53.9331 INFO Entering LoginController.OnLogin()
+2018-08-24 20:42:53.9331 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 20:45:18.7310 INFO Entering HomeController.Index()
+2018-08-24 20:45:29.7875 INFO Entering LoginController.OnLogin()
+2018-08-24 20:45:29.7974 INFO Parameters are: {"Username":"Super","Password":null,"RandomSalt":null}
+2018-08-24 21:16:08.1139 INFO Entering HomeController.Index()
+2018-08-24 21:16:23.2863 INFO Entering LoginController.OnLogin()
+2018-08-24 21:16:23.3013 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null}
+2018-08-24 21:25:44.8527 INFO Entering HomeController.Index()
+2018-08-24 21:27:19.3095 INFO Entering HomeController.Index()
+2018-08-24 21:27:43.5115 INFO Entering LoginController.OnLogin()
+2018-08-24 21:27:43.5444 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:28:04.3617 INFO Entering LoginController.OnLogin()
+2018-08-24 21:28:04.3757 INFO Parameters are: {"Username":"Superdooper","Password":"Meghanricks","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:29:57.9386 INFO Entering HomeController.Index()
+2018-08-24 21:30:40.0052 INFO Entering LoginController.OnLogin()
+2018-08-24 21:30:40.0212 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:30:51.8894 INFO Entering LoginController.OnLogin()
+2018-08-24 21:30:51.8894 INFO Parameters are: {"Username":"Superdooper","Password":"Supersecrets","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:30:53.1441 ERROR Exception LoginController.OnLogin()
+2018-08-24 21:35:48.3661 INFO Entering HomeController.Index()
+2018-08-24 21:35:57.4175 INFO Entering LoginController.OnLogin()
+2018-08-24 21:35:57.4175 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:35:57.5082 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:36:14.7312 INFO Entering LoginController.OnLogin()
+2018-08-24 21:36:14.7442 INFO Parameters are: {"Username":"CrazyamiRight","Password":"Supersecrets","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:36:14.8080 INFO Parameters are: {"Username":"CrazyamiRight","Password":"Supersecrets","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:36:16.3310 ERROR Exception LoginController.OnLogin()
+2018-08-24 21:38:47.3880 INFO Entering HomeController.Index()
+2018-08-24 21:38:56.3478 INFO Entering LoginController.OnLogin()
+2018-08-24 21:38:56.3657 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:38:56.4116 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":"8C7B35D1AC15CBADF67F980CA9403075","SearchCriteria":null}
+2018-08-24 21:39:12.4906 INFO Entering LoginController.OnLogin()
+2018-08-24 21:39:12.4906 INFO Parameters are: {"Username":"MyUsername","Password":"SecretPassword","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:39:12.4976 INFO Parameters are: {"Username":"MyUsername","Password":"SecretPassword","RandomSalt":"CF27FDAC04DCCA30F293DC8B052ABC6E","SearchCriteria":null}
+2018-08-24 21:39:13.8709 INFO Exiting LoginController.OnLogin() with login success
+2018-08-24 21:41:56.4991 INFO Entering HomeController.Index()
+2018-08-24 21:42:16.2189 INFO Entering LoginController.OnLogin()
+2018-08-24 21:42:16.2319 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:42:16.2648 INFO Parameters are: {"Username":null,"Password":null,"RandomSalt":"81E1BFD31C7412B66EA16FDC43FB36B1","SearchCriteria":null}
+2018-08-24 21:42:40.6376 INFO Entering LoginController.OnLogin()
+2018-08-24 21:42:40.6376 INFO Parameters are: {"Username":"MeghanRicks","Password":"secrets","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:42:40.6376 INFO Parameters are: {"Username":"MeghanRicks","Password":"secrets","RandomSalt":"A984FC63AE1FCBB6AEA6D451E13E58EE","SearchCriteria":null}
+2018-08-24 21:42:51.8895 INFO Entering LoginController.OnLogin()
+2018-08-24 21:42:51.8895 INFO Parameters are: {"Username":"MeghanRicks","Password":"secretsauce","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:42:51.9434 INFO Parameters are: {"Username":"MeghanRicks","Password":"secretsauce","RandomSalt":"69195135513EC550A67B59433412F6C6","SearchCriteria":null}
+2018-08-24 21:42:53.3307 INFO Exiting LoginController.OnLogin() with login success
+2018-08-24 21:51:41.3637 INFO Entering LoginController.OnLogin()
+2018-08-24 21:51:41.3637 INFO Parameters are: {"Username":"MeghanRicks","Password":null,"RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:51:41.4026 INFO Parameters are: {"Username":"MeghanRicks","Password":null,"RandomSalt":"49F498053EA653CEE7216627C2DD865B","SearchCriteria":null}
+2018-08-24 21:52:17.9758 INFO Entering LoginController.OnLogin()
+2018-08-24 21:52:17.9959 INFO Parameters are: {"Username":"Googlegly","Password":"secretpassword","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:52:17.9959 INFO Parameters are: {"Username":"Googlegly","Password":"secretpassword","RandomSalt":"F14526FE69A66B6F3A8466A7A93C1302","SearchCriteria":null}
+2018-08-24 21:52:31.0891 INFO Entering LoginController.OnLogin()
+2018-08-24 21:52:31.1110 INFO Parameters are: {"Username":"Googleglydfgsdfg","Password":"secretpassword","RandomSalt":null,"SearchCriteria":null}
+2018-08-24 21:52:31.1279 INFO Parameters are: {"Username":"Googleglydfgsdfg","Password":"secretpassword","RandomSalt":"FC67DC79B213B41F57CC62204DB4CCE8","SearchCriteria":null}
+2018-08-24 21:52:32.0052 INFO Exiting LoginController.OnLogin() with login success

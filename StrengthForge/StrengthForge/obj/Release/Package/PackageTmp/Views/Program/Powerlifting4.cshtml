@@ -1,0 +1,130 @@
+﻿@*
+	Trevor Moore
+	5/2/2018
+*@
+
+@{
+	ViewBag.Title = "The Strength Forge";
+	Layout = "~/Views/Shared/_NewLayout.cshtml";
+}
+
+<style>
+	.pagination > li > a, .pagination > li > span {
+		border-radius: 50% !important;
+		margin: 0 5px;
+	}
+</style>
+
+
+<!DOCTYPE html>
+
+
+<div class="form-horizontal">
+
+	<br />
+	<br />
+
+	<h3>Powerlifting Program:</h3>
+
+	<hr />
+
+	<h4>Day 4 - Arm Day</h4>
+
+	<hr />
+
+	<!--Table-->
+	<table class="table">
+
+		<!--Table head-->
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Exercise</th>
+				<th>Set 1</th>
+				<th>Set 2</th>
+				<th>Set 3</th>
+				<th>Set 4</th>
+				<th>Set 5</th>
+			</tr>
+		</thead>
+		<!--Table head-->
+		<!--Table body-->
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>Barbell Curls</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Alternating Dumbbell Curls</td>
+				<td>5 reps, each arm</td>
+				<td>5 reps, each arm</td>
+				<td>5 reps, each arm</td>
+				<td>5 reps, each arm</td>
+				<td>5 reps, each arm</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>Close Grip Bench Press</td>
+				<td>8 reps</td>
+				<td>8 reps</td>
+				<td>8 reps</td>
+				<td>8 reps</td>
+				<td>8 reps</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td>Cable Tricep Extensions</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td>Overhead Tricep Extensions</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+				<td>10 reps</td>
+			</tr>
+		</tbody>
+		<!--Table body-->
+
+	</table>
+	<!--Table-->
+
+	<center>
+		<button class="btn btn-primary hidden-print" onclick="myFunction()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
+	</center>
+
+	<br />
+
+	<div class="pagenavigation">
+		<div class="container">
+			<ul class="pagination">
+				<li><a href="~/Program/OnPowerlifting3">«</a></li>
+				<li><a href="~/Program/OnPowerlifting1">1</a></li>
+				<li><a href="~/Program/OnPowerlifting2">2</a></li>
+				<li><a href="~/Program/OnPowerlifting3">3</a></li>
+				<li class="active"><a href="~/Program/OnPowerlifting4">4 <span class="sr-only">(current)</span></a></li>
+				<li><a href="~/Program/OnPowerlifting5">5</a></li>
+				<li><a href="~/Program/OnPowerlifting5">»</a></li>
+			</ul>
+		</div>
+	</div>
+
+</div>
+
+<script>
+	function myFunction() {
+		window.print();
+	}
+</script>

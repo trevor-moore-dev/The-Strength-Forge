@@ -1,0 +1,15 @@
+﻿@model TheStrengthForge.Models.LoginModel
+
+@using (Html.BeginForm("OnSearch", "Search", FormMethod.Post))
+{
+	@Html.AntiForgeryToken()
+
+	<div class="navbar-form navbar-left" role="search">
+		<div class="form-group">
+			@Html.EditorFor(model => model.SearchCriteria, new { htmlAttributes = new { @class = "form-control", placeholder = "Search" } })
+		</div>
+
+		<input type="submit" value="Submit" class="btn btn-default" />
+
+	</div>
+}
