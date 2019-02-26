@@ -7,7 +7,7 @@ plateau on strength gains despite having a solid idea of what I want to do in my
 
 # What it does
 My app will generate up to 6 week long workout programs for you - this can be generic/random, specified
-to a workout style, or extremely specific down. If a user enters their current max weights that they can
+to a workout style, or extremely specific, down to sets, reps, and weights. If a user enters their current max weights that they can
 lift my app will generate up to a six week long program tailored to your workout style with the amount of
 weight to use, the sets to do, and the reps to complete along with rest time between sets and calories to
 eat on a daily basis, which will all be based off user inputs. The user will be able to print all the
